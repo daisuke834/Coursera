@@ -1,4 +1,4 @@
-#syntax used to run an ANOVA
+#syntax used to run Chi-Square
 [Link to Code Syntax](https://github.com/daisuke834/Coursera/blob/master/DataAnalysis_and_Interpretation__Wesleyan/DataAnalysisTools/week2/Assignment2_ChiSquare.py "Link to Code Syntax") <-Click Here
 
 #output
