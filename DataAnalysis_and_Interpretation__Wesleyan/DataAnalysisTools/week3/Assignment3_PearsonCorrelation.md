@@ -2,11 +2,11 @@
 [Link to Code Syntax](https://github.com/daisuke834/Coursera/blob/master/DataAnalysis_and_Interpretation__Wesleyan/DataAnalysisTools/week3/Assignment3_PearsonCorrelation.py "Link to Code Syntax") <-Click Here
 
 #output
-```association between first age and num of cig/month
-(-0.15133870139656994, 6.5684313328860354e-51)
-R=-0.151338701397
-R-square=0.0229034025404
-p=6.56843133289e-51```
+```association between first age and num of cig/month```
+```(-0.15133870139656994, 6.5684313328860354e-51)```
+```R=-0.151338701397```
+```R-square=0.0229034025404```
+```p=6.56843133289e-51```
 
 # interpretation
 * Data: Adults age 18 to 100.
