@@ -91,7 +91,7 @@ print('P')
 _p_pd = pd.DataFrame(_p, columns=_label, index=_label)
 print(_p_pd)
 
-_m = 6*5
+_m = 6*5/2
 _BonferroniAdjustment = 0.05 / _m
 print('')
 print('Number of Comparison='+str(_m))

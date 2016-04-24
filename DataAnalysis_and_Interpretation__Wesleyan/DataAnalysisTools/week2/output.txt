@@ -38,8 +38,8 @@ Divorced  4.355269e-05  5.601682e-02  0.521930  1.000000  3.558907e-02  2.862612
 Separa    4.434827e-08  8.594996e-01  0.931974  0.035589  1.000000e+00  4.402754e-01
 Nev Marr  1.625864e-39  2.190183e-01  0.607459  0.000003  4.402754e-01  1.000000e+00
 
-Number of Comparison=30
-BonferroniAdjustment=0.0016666666666666668
+Number of Comparison=15.0
+BonferroniAdjustment=0.0033333333333333335
 
 Statistically significant
          Married Liv some  Widow Divorced Separa Nev Marr
