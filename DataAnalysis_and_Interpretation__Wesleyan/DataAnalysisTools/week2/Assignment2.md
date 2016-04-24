@@ -11,6 +11,12 @@
 
 Chi-Square test revealed that current marital status and alcohol abuse were significantly associated, X2=180.5, p=4.2e-37.
 
-Post hoc comparisons of alcohol abuse by pairs of marital statuses revealed that marital status and alcohol abuse were significantly associated for all of the comparison pairs (15 comparisons) because each p-value was smaller than Bonferroni-Adjustment=0.0017. The result also showed that those who have been never married tend to have the highest rate of alcohol abuse, and those who are married tend to have the lowest rate of alcohol abuse.
+Post hoc comparisons of alcohol abuse by pairs of marital statuses revealed that marital status and alcohol abuse were significantly associated for the following 5 comparisons among 15 comparisons because thse p-values were smaller than Bonferroni-Adjustment=0.0017:
+* Married vs Living with someone
+* Married vs Divorced
+* Married vs Separated
+* Married vs Never Married
+* Divorced vs Never Married
+The result showed that those who have been never married tend to have the higher rate of alcohol abuse than those who are married and those who are divorced. The result also showed that those who are married tend to have the lower rate of alcohol abuse than the others except for the widowed.
 
 ![BarChart](barchart.png)

@@ -21,31 +21,31 @@ p=4.20985645093e-37
 
 ***********************************************
 Chi-Square
-             Married    Liv some       Widow    Divorced      Separa    Nev Marr
-Married          NaN  180.487772  180.487772  180.487772  180.487772  180.487772
-Liv some  180.487772         NaN  180.487772  180.487772  180.487772  180.487772
-Widow     180.487772  180.487772         NaN  180.487772  180.487772  180.487772
-Divorced  180.487772  180.487772  180.487772         NaN  180.487772  180.487772
-Separa    180.487772  180.487772  180.487772  180.487772         NaN  180.487772
-Nev Marr  180.487772  180.487772  180.487772  180.487772  180.487772         NaN
+             Married   Liv some     Widow   Divorced     Separa    Nev Marr
+Married          NaN  30.423062  4.227881  16.709919  29.949340  173.013210
+Liv some   30.423062        NaN  0.003841   3.651557   0.031333    1.510792
+Widow       4.227881   0.003841       NaN   0.410079   0.007287    0.263892
+Divorced   16.709919   3.651557  0.410079        NaN   4.416687   21.906509
+Separa     29.949340   0.031333  0.007287   4.416687        NaN    0.595565
+Nev Marr  173.013210   1.510792  0.263892  21.906509   0.595565         NaN
 
 P
-               Married      Liv some         Widow      Divorced        Separa      Nev Marr
-Married   1.000000e+00  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37
-Liv some  4.209856e-37  1.000000e+00  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37
-Widow     4.209856e-37  4.209856e-37  1.000000e+00  4.209856e-37  4.209856e-37  4.209856e-37
-Divorced  4.209856e-37  4.209856e-37  4.209856e-37  1.000000e+00  4.209856e-37  4.209856e-37
-Separa    4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  1.000000e+00  4.209856e-37
-Nev Marr  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  1.000000e+00
+               Married      Liv some     Widow  Divorced        Separa      Nev Marr
+Married   1.000000e+00  3.473738e-08  0.039765  0.000044  4.434827e-08  1.625864e-39
+Liv some  3.473738e-08  1.000000e+00  0.950583  0.056017  8.594996e-01  2.190183e-01
+Widow     3.976506e-02  9.505833e-01  1.000000  0.521930  9.319740e-01  6.074591e-01
+Divorced  4.355269e-05  5.601682e-02  0.521930  1.000000  3.558907e-02  2.862612e-06
+Separa    4.434827e-08  8.594996e-01  0.931974  0.035589  1.000000e+00  4.402754e-01
+Nev Marr  1.625864e-39  2.190183e-01  0.607459  0.000003  4.402754e-01  1.000000e+00
 
 Number of Comparison=30
-BonferroniAdjustment0.0016666666666666668
+BonferroniAdjustment=0.0016666666666666668
 
 Statistically significant
          Married Liv some  Widow Divorced Separa Nev Marr
-Married    False     True   True     True   True     True
-Liv some    True    False   True     True   True     True
-Widow       True     True  False     True   True     True
-Divorced    True     True   True    False   True     True
-Separa      True     True   True     True  False     True
-Nev Marr    True     True   True     True   True    False
+Married    False     True  False     True   True     True
+Liv some    True    False  False    False  False    False
+Widow      False    False  False    False  False    False
+Divorced    True    False  False    False  False     True
+Separa      True    False  False    False  False    False
+Nev Marr    True    False  False     True  False    False

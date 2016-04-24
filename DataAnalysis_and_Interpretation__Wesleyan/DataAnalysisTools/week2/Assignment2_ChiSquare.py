@@ -10,7 +10,7 @@ pd.set_option('display.width', 100)
 print('***********************************************')
 print('***********************************************')
 print('***********************************************')
-#_data = pd.read_csv('nesarc_pds.csv', low_memory=False)
+_data = pd.read_csv('nesarc_pds.csv', low_memory=False)
 
 _data['MARITAL'] = pd.to_numeric(_data['MARITAL'], errors='coerce')
 _data['AGE'] = pd.to_numeric(_data['AGE'], errors='coerce')
@@ -70,7 +70,7 @@ for _i in range(1,7):
 		_recode3 = {_i: _recode1[_i], _j: _recode1[_j]}
 		_sub4.loc[:, 'MARITAL']= _sub4['MARITAL'].map(_recode3)
 		_sub4.loc[:, 'ABUSE']= _sub4['S2BQ1B1'].map(_recode2)
-		_ct2=pd.crosstab(_sub2['ABUSE'], _sub2['MARITAL'])
+		_ct2=pd.crosstab(_sub4['ABUSE'], _sub4['MARITAL'])
 		_cs2= scipy.stats.chi2_contingency(_ct2)
 		_p[_i-1,_j-1] = _cs2[1]
 		_p[_j-1,_i-1] = _cs2[1]
@@ -95,7 +95,7 @@ _m = 6*5
 _BonferroniAdjustment = 0.05 / _m
 print('')
 print('Number of Comparison='+str(_m))
-print('BonferroniAdjustment'+str(_BonferroniAdjustment))
+print('BonferroniAdjustment='+str(_BonferroniAdjustment))
 _tf = (_p<_BonferroniAdjustment)
 _tf_pd = pd.DataFrame(_tf, columns=_label, index=_label)
 print('')
