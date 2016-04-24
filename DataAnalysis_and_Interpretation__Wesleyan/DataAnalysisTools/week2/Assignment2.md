@@ -17,6 +17,7 @@ Post hoc comparisons of alcohol abuse by pairs of marital statuses revealed that
 * Married vs Separated
 * Married vs Never Married
 * Divorced vs Never Married
+
 The result showed that those who have been never married tend to have the higher rate of alcohol abuse than those who are married and those who are divorced. The result also showed that those who are married tend to have the lower rate of alcohol abuse than the others except for the widowed.
 
 ![BarChart](barchart.png)
