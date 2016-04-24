@@ -10,8 +10,8 @@
 
 # interpretation
 * Data: Adults age 18 to 100.
-* Explanatory Variable: Number of cigs per month
-* Response Variable: Age when smoked first full cigarette
+* Explanatory Variable: Age when smoked first full cigarette
+* Response Variable: Number of cigs per month
 
 Pearson Correlation study revealed that there was a weak correlation between number of cigs per month and first age (R=-0.15), but we can predict only 2% of variability of number of cigs per month by age when smoked first full cigarette. Because p-value is extremely small (p=6.6e-51), the relationship is statistically significant.
 
