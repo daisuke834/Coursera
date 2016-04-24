@@ -1,0 +1,51 @@
+***********************************************
+***********************************************
+***********************************************
+MARITAL  Divorced  Liv some  Married  Nev Marr  Separa  Widow
+ABUSE                                                        
+No           1969       781     8367      4843     623    129
+Yes           115        63      308       468      53     10
+
+MARITAL  Divorced  Liv some   Married  Nev Marr    Separa     Widow
+ABUSE                                                              
+No       0.944818  0.925355  0.964496  0.911881  0.921598  0.928058
+Yes      0.055182  0.074645  0.035504  0.088119  0.078402  0.071942
+
+chi-square value, p value, expected counts
+(180.48777175926605, 4.2098564509334366e-37, 5, array([[  1.96445417e+03,   7.95585087e+02,   8.17737041e+03,
+          5.00634170e+03,   6.37222178e+02,   1.31026454e+02],
+       [  1.19545829e+02,   4.84149134e+01,   4.97629590e+02,
+          3.04658300e+02,   3.87778216e+01,   7.97354617e+00]]))
+x2=180.487771759
+p=4.20985645093e-37
+
+***********************************************
+Chi-Square
+             Married    Liv some       Widow    Divorced      Separa    Nev Marr
+Married          NaN  180.487772  180.487772  180.487772  180.487772  180.487772
+Liv some  180.487772         NaN  180.487772  180.487772  180.487772  180.487772
+Widow     180.487772  180.487772         NaN  180.487772  180.487772  180.487772
+Divorced  180.487772  180.487772  180.487772         NaN  180.487772  180.487772
+Separa    180.487772  180.487772  180.487772  180.487772         NaN  180.487772
+Nev Marr  180.487772  180.487772  180.487772  180.487772  180.487772         NaN
+
+P
+               Married      Liv some         Widow      Divorced        Separa      Nev Marr
+Married   1.000000e+00  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37
+Liv some  4.209856e-37  1.000000e+00  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37
+Widow     4.209856e-37  4.209856e-37  1.000000e+00  4.209856e-37  4.209856e-37  4.209856e-37
+Divorced  4.209856e-37  4.209856e-37  4.209856e-37  1.000000e+00  4.209856e-37  4.209856e-37
+Separa    4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  1.000000e+00  4.209856e-37
+Nev Marr  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  4.209856e-37  1.000000e+00
+
+Number of Comparison=30
+BonferroniAdjustment0.0016666666666666668
+
+Statistically significant
+         Married Liv some  Widow Divorced Separa Nev Marr
+Married    False     True   True     True   True     True
+Liv some    True    False   True     True   True     True
+Widow       True     True  False     True   True     True
+Divorced    True     True   True    False   True     True
+Separa      True     True   True     True  False     True
+Nev Marr    True     True   True     True   True    False
