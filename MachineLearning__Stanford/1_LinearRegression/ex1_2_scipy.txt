@@ -1,0 +1,16 @@
+*************************
+***ex1data2***
+(_M, _N)= ( 47 ,  2 )
+Average= [[ 2000.68085106     3.17021277]]
+Std Diviation= [[  7.86202619e+02   7.52842809e-01]]
+J= 65591548106.5
+***Optimization Start**********
+Optimization terminated successfully.
+         Current function value: 2043280050.602828
+         Iterations: 10
+         Function evaluations: 11
+         Gradient evaluations: 11
+***Optimization Result**********
+J= 2043280050.6
+theta=: [[ 340412.65957497  109447.79646888   -6578.35485452]]
+for [1650, 3], we predict $ 293081.46

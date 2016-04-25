@@ -1,0 +1,18 @@
+(_M, _N)= ( 100 ,  2 )
+Average= [[ 65.64427406  66.22199809]]
+Std Diviation= [[ 19.36068671  18.48963567]]
+Initial J=	0.69314718056
+Initial Grad=	[[-0.1        -0.28122914 -0.25098615]]
+***Optimization***
+Optimization terminated successfully.
+         Current function value: 0.203498
+         Iterations: 19
+         Function evaluations: 20
+         Gradient evaluations: 20
+***Result***
+J= 0.203497702351
+accuracy=0.89
+precision=0.902
+recall=0.917
+F_score=0.909
+theta =  [[ 1.71835728  3.99274735  3.7249355 ]]
