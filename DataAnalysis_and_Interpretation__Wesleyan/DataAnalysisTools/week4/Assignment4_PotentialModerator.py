@@ -10,7 +10,7 @@ pd.set_option('display.width', 100)
 print('***********************************************')
 print('***********************************************')
 print('***********************************************')
-#_data = pd.read_csv('nesarc_pds.csv', low_memory=False)
+_data = pd.read_csv('nesarc_pds.csv', low_memory=False)
 
 _data['MARITAL'] = pd.to_numeric(_data['MARITAL'], errors='coerce')
 _data['AGE'] = pd.to_numeric(_data['AGE'], errors='coerce')
