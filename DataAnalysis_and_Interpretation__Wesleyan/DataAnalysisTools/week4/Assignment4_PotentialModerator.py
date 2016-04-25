@@ -33,7 +33,7 @@ _recode2 = {1:'Yes', 2: 'No'}
 _sub2.loc[:, 'ABUSE']= _sub2['S2BQ1B1'].map(_recode2)
 
 # contingency table of observed counts
-print('***Male+Female*************')
+print('***Both Gender********************************************')
 print('Contingency Table')
 _ct1=pd.crosstab(_sub2['ABUSE'], _sub2['MARITAL'])
 print (_ct1)
@@ -67,7 +67,6 @@ plt.ylabel('Alcohol abuse/dependence happen in last 12 month')
 plt.title('Factor Plot: Each gender')
 plt.show()
 
-print('***Both Gender********************************************')
 #_recode1 = {1:'Married', 2:'Liv some', 3:'Widow', 4:'Divorced', 5:'Separa', 6:'Nev Marr'}
 _p = np.ndarray((6,6), dtype=np.float)
 _x2 = np.ndarray((6,6), dtype=np.float)
@@ -108,6 +107,21 @@ print('Statistically significant')
 print(_tf_pd)
 
 print('***Male********************************************')
+_sub5 = _sub2.copy()
+_sub5 = _sub5[_sub5['SEX']=='Male']
+print('Contingency Table')
+_ct5=pd.crosstab(_sub5['ABUSE'], _sub5['MARITAL'])
+print (_ct5)
+print('')
+print('column percentages')
+print( _ct5/_ct5.sum(axis=0) )
+print('')
+print ('chi-square value, p value, expected counts')
+_cs5= scipy.stats.chi2_contingency(_ct5)
+print (_cs5)
+print('x2='+str(_cs5[0]))
+print('p='+str(_cs5[1]))
+print('')
 #_recode1 = {1:'Married', 2:'Liv some', 3:'Widow', 4:'Divorced', 5:'Separa', 6:'Nev Marr'}
 _p = np.ndarray((6,6), dtype=np.float)
 _x2 = np.ndarray((6,6), dtype=np.float)
@@ -149,6 +163,22 @@ print('Statistically significant')
 print(_tf_pd)
 
 print('***Female********************************************')
+_sub5 = _sub2.copy()
+_sub5 = _sub5[_sub5['SEX']=='Female']
+print('Contingency Table')
+_ct5=pd.crosstab(_sub5['ABUSE'], _sub5['MARITAL'])
+print (_ct5)
+print('')
+print('column percentages')
+print( _ct5/_ct5.sum(axis=0) )
+print('')
+print ('chi-square value, p value, expected counts')
+_cs5= scipy.stats.chi2_contingency(_ct5)
+print (_cs5)
+print('x2='+str(_cs5[0]))
+print('p='+str(_cs5[1]))
+print('')
+
 #_recode1 = {1:'Married', 2:'Liv some', 3:'Widow', 4:'Divorced', 5:'Separa', 6:'Nev Marr'}
 _p = np.ndarray((6,6), dtype=np.float)
 _x2 = np.ndarray((6,6), dtype=np.float)

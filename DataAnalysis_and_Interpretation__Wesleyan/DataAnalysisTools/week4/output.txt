@@ -1,7 +1,7 @@
 ***********************************************
 ***********************************************
 ***********************************************
-***Male+Female*************
+***Both Gender********************************************
 Contingency Table
 MARITAL  Divorced  Liv some  Married  Nev Marr  Separa  Widow
 ABUSE                                                        
@@ -23,7 +23,6 @@ x2=180.487771759
 p=4.20985645093e-37
 
 
-***Both Gender********************************************
 Chi-Square
              Married   Liv some     Widow   Divorced     Separa    Nev Marr
 Married          NaN  30.423062  4.227881  16.709919  29.949340  173.013210
@@ -53,7 +52,28 @@ Widow      False    False  False    False  False    False
 Divorced    True    False  False    False  False     True
 Separa      True    False  False    False  False    False
 Nev Marr    True    False  False     True  False    False
+
 ***Male********************************************
+Contingency Table
+MARITAL  Divorced  Liv some  Married  Nev Marr  Separa  Widow
+ABUSE                                                        
+No            823       373     4073      2366     218     24
+Yes            62        41      161       284      23      2
+
+column percentages
+MARITAL  Divorced  Liv some   Married  Nev Marr    Separa     Widow
+ABUSE                                                              
+No       0.929944  0.900966  0.961974   0.89283  0.904564  0.923077
+Yes      0.070056  0.099034  0.038026   0.10717  0.095436  0.076923
+
+chi-square value, p value, expected counts
+(133.76475010686551, 3.7790974704050707e-27, 5, array([[  8.24987574e+02,   3.85926391e+02,   3.94688970e+03,
+          2.47030178e+03,   2.24657633e+02,   2.42369231e+01],
+       [  6.00124260e+01,   2.80736095e+01,   2.87110296e+02,
+          1.79698225e+02,   1.63423669e+01,   1.76307692e+00]]))
+x2=133.764750107
+p=3.77909747041e-27
+
 Chi-Square
              Married   Liv some     Widow   Divorced     Separa    Nev Marr
 Married          NaN  32.313970  0.268359  17.264365  17.633416  127.734951
@@ -83,7 +103,28 @@ Widow      False    False  False    False  False    False
 Divorced    True    False  False    False  False     True
 Separa      True    False  False    False  False    False
 Nev Marr    True    False  False     True  False    False
+
 ***Female********************************************
+Contingency Table
+MARITAL  Divorced  Liv some  Married  Nev Marr  Separa  Widow
+ABUSE                                                        
+No           1146       408     4294      2477     405    105
+Yes            53        22      147       184      30      8
+
+column percentages
+MARITAL  Divorced  Liv some   Married  Nev Marr    Separa     Widow
+ABUSE                                                              
+No       0.955796  0.948837  0.966899  0.930853  0.931034  0.929204
+Yes      0.044204  0.051163  0.033101  0.069147  0.068966  0.070796
+
+chi-square value, p value, expected counts
+(53.712124219372988, 2.4016585637024309e-10, 5, array([[ 1141.62786938,   409.42450695,  4228.49822179,  2533.67119302,
+          414.18525703,   107.59295183],
+       [   57.37213062,    20.57549305,   212.50177821,   127.32880698,
+           20.81474297,     5.40704817]]))
+x2=53.7121242194
+p=2.4016585637e-10
+
 Chi-Square
             Married  Liv some     Widow  Divorced     Separa   Nev Marr
 Married         NaN  3.298616  3.685147  3.085795  13.560597  47.849290
