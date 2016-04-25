@@ -1,4 +1,4 @@
-#syntax used to run Chi-Square
+#syntax used for Potential Moderator Test
 [Link to Code Syntax](https://github.com/daisuke834/Coursera/blob/master/DataAnalysis_and_Interpretation__Wesleyan/DataAnalysisTools/week4/Assignment4_PotentialModerator.py "Link to Code Syntax") <-Click Here
 
 #output
