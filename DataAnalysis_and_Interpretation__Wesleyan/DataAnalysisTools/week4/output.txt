@@ -1,0 +1,115 @@
+***********************************************
+***********************************************
+***********************************************
+***Male+Female*************
+Contingency Table
+MARITAL  Divorced  Liv some  Married  Nev Marr  Separa  Widow
+ABUSE                                                        
+No           1969       781     8367      4843     623    129
+Yes           115        63      308       468      53     10
+
+column percentages
+MARITAL  Divorced  Liv some   Married  Nev Marr    Separa     Widow
+ABUSE                                                              
+No       0.944818  0.925355  0.964496  0.911881  0.921598  0.928058
+Yes      0.055182  0.074645  0.035504  0.088119  0.078402  0.071942
+
+chi-square value, p value, expected counts
+(180.48777175926605, 4.2098564509334366e-37, 5, array([[  1.96445417e+03,   7.95585087e+02,   8.17737041e+03,
+          5.00634170e+03,   6.37222178e+02,   1.31026454e+02],
+       [  1.19545829e+02,   4.84149134e+01,   4.97629590e+02,
+          3.04658300e+02,   3.87778216e+01,   7.97354617e+00]]))
+x2=180.487771759
+p=4.20985645093e-37
+
+
+***Both Gender********************************************
+Chi-Square
+             Married   Liv some     Widow   Divorced     Separa    Nev Marr
+Married          NaN  30.423062  4.227881  16.709919  29.949340  173.013210
+Liv some   30.423062        NaN  0.003841   3.651557   0.031333    1.510792
+Widow       4.227881   0.003841       NaN   0.410079   0.007287    0.263892
+Divorced   16.709919   3.651557  0.410079        NaN   4.416687   21.906509
+Separa     29.949340   0.031333  0.007287   4.416687        NaN    0.595565
+Nev Marr  173.013210   1.510792  0.263892  21.906509   0.595565         NaN
+
+P
+               Married      Liv some     Widow  Divorced        Separa      Nev Marr
+Married   1.000000e+00  3.473738e-08  0.039765  0.000044  4.434827e-08  1.625864e-39
+Liv some  3.473738e-08  1.000000e+00  0.950583  0.056017  8.594996e-01  2.190183e-01
+Widow     3.976506e-02  9.505833e-01  1.000000  0.521930  9.319740e-01  6.074591e-01
+Divorced  4.355269e-05  5.601682e-02  0.521930  1.000000  3.558907e-02  2.862612e-06
+Separa    4.434827e-08  8.594996e-01  0.931974  0.035589  1.000000e+00  4.402754e-01
+Nev Marr  1.625864e-39  2.190183e-01  0.607459  0.000003  4.402754e-01  1.000000e+00
+
+Number of Comparison=15.0
+BonferroniAdjustment=0.0033333333333333335
+
+Statistically significant
+         Married Liv some  Widow Divorced Separa Nev Marr
+Married    False     True  False     True   True     True
+Liv some    True    False  False    False  False    False
+Widow      False    False  False    False  False    False
+Divorced    True    False  False    False  False     True
+Separa      True    False  False    False  False    False
+Nev Marr    True    False  False     True  False    False
+***Male********************************************
+Chi-Square
+             Married   Liv some     Widow   Divorced     Separa    Nev Marr
+Married          NaN  32.313970  0.268359  17.264365  17.633416  127.734951
+Liv some   32.313970        NaN  0.000776   2.859365   0.000172    0.171524
+Widow       0.268359   0.000776       NaN   0.064642   0.002157    0.031621
+Divorced   17.264365   2.859365  0.064642        NaN   1.403434    9.933165
+Separa     17.633416   0.000172  0.002157   1.403434        NaN    0.208761
+Nev Marr  127.734951   0.171524  0.031621   9.933165   0.208761         NaN
+
+P
+               Married      Liv some     Widow  Divorced    Separa      Nev Marr
+Married   1.000000e+00  1.311669e-08  0.604435  0.000033  0.000027  1.282795e-29
+Liv some  1.311669e-08  1.000000e+00  0.977779  0.090843  0.989530  6.787605e-01
+Widow     6.044346e-01  9.777789e-01  1.000000  0.799305  0.962957  8.588612e-01
+Divorced  3.252294e-05  9.084334e-02  0.799305  1.000000  0.236150  1.623272e-03
+Separa    2.678406e-05  9.895295e-01  0.962957  0.236150  1.000000  6.477401e-01
+Nev Marr  1.282795e-29  6.787605e-01  0.858861  0.001623  0.647740  1.000000e+00
+
+Number of Comparison=15.0
+BonferroniAdjustment=0.0033333333333333335
+
+Statistically significant
+         Married Liv some  Widow Divorced Separa Nev Marr
+Married    False     True  False     True   True     True
+Liv some    True    False  False    False  False    False
+Widow      False    False  False    False  False    False
+Divorced    True    False  False    False  False     True
+Separa      True    False  False    False  False    False
+Nev Marr    True    False  False     True  False    False
+***Female********************************************
+Chi-Square
+            Married  Liv some     Widow  Divorced     Separa   Nev Marr
+Married         NaN  3.298616  3.685147  3.085795  13.560597  47.849290
+Liv some   3.298616       NaN  0.338236  0.208534   0.918357   1.646510
+Widow      3.685147  0.338236       NaN  1.102070   0.019476   0.014773
+Divorced   3.085795  0.208534  1.102070       NaN   3.561893   8.496167
+Separa    13.560597  0.918357  0.019476  3.561893        NaN   0.007764
+Nev Marr  47.849290  1.646510  0.014773  8.496167   0.007764        NaN
+
+P
+               Married  Liv some     Widow  Divorced    Separa      Nev Marr
+Married   1.000000e+00  0.069338  0.054899  0.078979  0.000231  4.602738e-12
+Liv some  6.933828e-02  1.000000  0.560849  0.647919  0.337907  1.994346e-01
+Widow     5.489914e-02  0.560849  1.000000  0.293812  0.889011  9.032586e-01
+Divorced  7.897867e-02  0.647919  0.293812  1.000000  0.059120  3.558954e-03
+Separa    2.309837e-04  0.337907  0.889011  0.059120  1.000000  9.297876e-01
+Nev Marr  4.602738e-12  0.199435  0.903259  0.003559  0.929788  1.000000e+00
+
+Number of Comparison=15.0
+BonferroniAdjustment=0.0033333333333333335
+
+Statistically significant
+         Married Liv some  Widow Divorced Separa Nev Marr
+Married    False    False  False    False   True     True
+Liv some   False    False  False    False  False    False
+Widow      False    False  False    False  False    False
+Divorced   False    False  False    False  False    False
+Separa      True    False  False    False  False    False
+Nev Marr    True    False  False    False  False    False
