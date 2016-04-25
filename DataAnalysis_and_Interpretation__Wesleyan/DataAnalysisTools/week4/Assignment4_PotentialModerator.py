@@ -122,7 +122,7 @@ print (_cs5)
 print('x2='+str(_cs5[0]))
 print('p='+str(_cs5[1]))
 print('')
-#_recode1 = {1:'Married', 2:'Liv some', 3:'Widow', 4:'Divorced', 5:'Separa', 6:'Nev Marr'}
+_recode1 = {1:'Married', 2:'Liv some', 3:'Widow', 4:'Divorced', 5:'Separa', 6:'Nev Marr'}
 _p = np.ndarray((6,6), dtype=np.float)
 _x2 = np.ndarray((6,6), dtype=np.float)
 for _i in range(1,7):
