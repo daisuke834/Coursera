@@ -29,7 +29,7 @@ The following figure implies that alcohol abuse/dependense of female on marital 
 ![FactorPlot:Mail/Femail](FactorPlot2.png)
 
 I did a Chi-Square test and post hoc comparison on each subset of gender. Chi-Squared value of female (X2=53.7, p=2.4e-10) is much smaller than the value of male (X2=133.8, p=p=3.8e-27). Association between marital status and alcohol abuse of female is still significant, but smaller number of comparisons pairs are significant for female than male.
-### Male
+### Male (Post hoc test)
 Marital status and alcohol abuse of male are significantly associated for the following comparisons.
 * Married vs Living with someone (p=1.311669e-08)
 * Married vs Divorced (p=3.252294e-05)
@@ -37,7 +37,7 @@ Marital status and alcohol abuse of male are significantly associated for the fo
 * Married vs Never Married (p=1.282795e-29)
 * Divorced vs Never Married (p=1.623272e-03)
 
-### Female
+### Female (Post hoc test)
 Marital status and alcohol abuse of male are significantly associated for the following comparisons.
 * Married vs Separated (p=0.000231)
 * Married vs Never Married (p=4.602738e-12)
