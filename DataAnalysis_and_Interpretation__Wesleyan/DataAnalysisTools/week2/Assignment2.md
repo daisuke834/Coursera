@@ -3,6 +3,10 @@
 
 #output
 [Link to Output](https://github.com/daisuke834/Coursera/blob/master/DataAnalysis_and_Interpretation__Wesleyan/DataAnalysisTools/week2/output.txt "Link to Output") <-Click Here
+### Chi-Square Test
+![chisquare](chisquare.png)
+### Post Hoc Test
+![posthoc](posthoc.png)
 
 # interpretation
 * Data: Adults age 20 to 50.
