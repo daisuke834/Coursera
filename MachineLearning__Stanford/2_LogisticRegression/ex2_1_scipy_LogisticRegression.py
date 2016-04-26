@@ -26,13 +26,6 @@ _X = _data_array[:,0:-1].reshape(_M,_N)
 _y = _data_array[:,-1].reshape(_M,1)
 print '(_M, _N)= (', _M, ', ', _N, ')'
 
-plt.scatter((_X[:,0])[_y.ravel()==0], (_X[:,1])[_y.ravel()==0], label='Admitted', color='red')
-plt.scatter((_X[:,0])[_y.ravel()==1], (_X[:,1])[_y.ravel()==1], label='Not addmitted', color='blue')
-plt.xlabel('Exam 1 score')
-plt.ylabel('Exam 2 score')
-plt.legend()
-plt.show ()
-
 _X_mean = None
 _X_std = None
 
@@ -76,5 +69,6 @@ _Xtemp[:,1] = np.linspace(_X[:,1].min(), _X[:,1].max(),100)
 _Xtemp[:,2] = - (_theta[0,0] + _theta[1,0] * _Xtemp[:,1]) / _theta[2,0]
 _Xtemp = _myml.X_original(_Xtemp, _X_mean, _X_std)
 plt.plot(_Xtemp[:,1], _Xtemp[:,2], label='Decision Boundary')
+plt.title('Logistic Regression: BFGS by scipy, lambda='+str(round(_lambda,5)))
 plt.legend()
 plt.show ()

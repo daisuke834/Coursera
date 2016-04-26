@@ -26,15 +26,6 @@ _X1 = np.array((_data_array[:,0])).reshape(_M,1)
 _X2 = np.array((_data_array[:,1])).reshape(_M,1)
 _y = _data_array[:,-1].reshape(_M,1)
 
-_y0_list = np.where(_y==0)
-plt.scatter(_X1[_y0_list], _X2[_y0_list], label='Admitted', color='red')
-_y1_list = np.where(_y==1)
-plt.scatter(_X1[_y1_list], _X2[_y1_list], label='Not addmitted', color='blue')
-plt.xlabel('Exam 1 score')
-plt.ylabel('Exam 2 score')
-plt.legend()
-plt.show ()
-
 _map_degree = 6
 
 _X_mean = None
@@ -95,10 +86,12 @@ _XX = _myml.mapFeature(_Xmg.ravel().T, _Ymg.ravel().T, _map_degree)
 _Z = _myml.predict_linear( _XX, _theta, _X_mean, _X_std, False).reshape(_Xmg.shape)
 plt.contour(_Xmg, _Ymg, _Z, levels=[0.0], label='Decision Boundary')
 #plt.contourf(_Xmg, _Ymg, _Z)
-plt.scatter(_X[_y0_list,1], _X[_y0_list,2], label='Addmitted', color='red')
-plt.scatter(_X[_y1_list,1], _X[_y1_list,2], label='Not addmitted', color='blue')
-
-plt.xlabel('Exam 1 score')
-plt.ylabel('Exam 2 score')
+_y0_list = np.where(_y==0)
+_y1_list = np.where(_y==1)
+plt.scatter(_X[_y0_list,1], _X[_y0_list,2], label='PASS', color='red')
+plt.scatter(_X[_y1_list,1], _X[_y1_list,2], label='FAIL', color='blue')
+plt.title('Polynomial Gradient Descent: Scratch, lambda='+str(_lambda)+', alpha='+str(_alpha))
+plt.xlabel('Microchip Test 1')
+plt.ylabel('Microchip Test 2')
 plt.legend()
 plt.show ()

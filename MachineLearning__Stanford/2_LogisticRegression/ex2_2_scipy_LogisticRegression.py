@@ -27,15 +27,6 @@ _X1 = np.array((_data_array[:,0])).reshape(_M,1)
 _X2 = np.array((_data_array[:,1])).reshape(_M,1)
 _y = _data_array[:,-1].reshape(_M,1)
 
-_y0_list = np.where(_y==0)
-plt.scatter(_X1[_y0_list], _X2[_y0_list], label='PASS', color='red')
-_y1_list = np.where(_y==1)
-plt.scatter(_X1[_y1_list], _X2[_y1_list], label='FAIL', color='blue')
-plt.xlabel('Microchip Test 1')
-plt.ylabel('Microchip Test 2')
-plt.legend()
-plt.show ()
-
 _map_degree = 6
 
 _X_mean = None
@@ -78,10 +69,12 @@ _XX = _myml.mapFeature(_Xmg.ravel().T, _Ymg.ravel().T, _map_degree)
 _Z = _myml.predict_linear( _XX, _theta, _X_mean, _X_std, False).reshape(_Xmg.shape)
 plt.contour(_Xmg, _Ymg, _Z, levels=[0.0], label='Decision Boundary')
 #plt.contourf(_Xmg, _Ymg, _Z)
+_y0_list = np.where(_y==0)
+_y1_list = np.where(_y==1)
 plt.scatter(_X[_y0_list,1], _X[_y0_list,2], label='PASS', color='red')
 plt.scatter(_X[_y1_list,1], _X[_y1_list,2], label='FAIL', color='blue')
-
 plt.xlabel('Microchip Test 1')
 plt.ylabel('Microchip Test 2')
+plt.title('Logistic Regression: BFGS by scipy, lambda='+str(round(_lambda,5)))
 plt.legend()
 plt.show ()

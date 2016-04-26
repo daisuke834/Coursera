@@ -38,7 +38,8 @@ plt.xlabel('Exam 1 Score')
 plt.ylabel('Exam 2 Score')
 
 print '***Start Fitting***'
-_model = linear_model.LogisticRegression(C=1000000.0)
+_C=1000000.0
+_model = linear_model.LogisticRegression(C=_C)
 _model.fit(_X, _y)
 print 'Coefficients:', _model.coef_
 print 'Intercept:', _model.intercept_
@@ -53,5 +54,6 @@ print 'F_score=' +str(np.round(_F_score,3))
 _plot_x = np.array([min(_X[:,0])-2, max(_X[:,0])+2])
 _plot_y = - (_model.intercept_[0] + _model.coef_[0][0] * _plot_x)  / _model.coef_[0][1]
 plt.plot(_plot_x, _plot_y, 'b')
+plt.title('Scikit-learn: Logistic Regression, C='+str(round(_C,3)))
 plt.show ()
 print 'for [45, 85], we predict ', _model.predict(np.array([[45.0,85.0]]))
